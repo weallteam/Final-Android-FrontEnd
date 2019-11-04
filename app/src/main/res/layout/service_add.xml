@@ -9,8 +9,8 @@
 
     <ImageButton
         android:id="@+id/service_addpicture"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/ic_file_upload_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,6 +28,7 @@
         android:ems="10"
         android:hint="Title"
         android:inputType="textPersonName"
+        android:padding="10dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +45,7 @@
         android:ems="10"
         android:hint="Description"
         android:inputType="textPersonName"
+        android:padding="10dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/Category_Spinner"
@@ -69,7 +71,7 @@
         tools:visibility="gone" />
 
     <EditText
-        android:id="@+id/etGender"
+        android:id="@+id/tvGender"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -88,10 +90,10 @@
         android:text="Select Date"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/etGender"
+        app:layout_constraintEnd_toEndOf="@+id/tvGender"
         app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/etGender"
-        app:layout_constraintTop_toBottomOf="@+id/etGender"
+        app:layout_constraintStart_toStartOf="@+id/tvGender"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender"
         app:layout_constraintVertical_bias="0.139"
         tools:visibility="gone" />
 

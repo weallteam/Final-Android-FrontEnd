@@ -3,18 +3,18 @@
     android:layout_width="150dp"
     android:layout_height="150dp"
     android:orientation="vertical"
-    android:background="@color/cardview_dark_background"
     >
 
     <ImageButton
         android:id="@+id/CategoriesImageView"
-        android:layout_width="150dp"
-        android:layout_height="125dp"
-        android:layout_gravity="center" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
 
     <TextView
+        android:fontFamily="@font/source_sans_pro_semibold"
         android:id="@+id/CategoriesNameView"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:text="excample"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

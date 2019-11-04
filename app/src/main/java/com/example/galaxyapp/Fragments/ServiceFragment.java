@@ -12,7 +12,6 @@ import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.StrictMode;
 import android.text.TextUtils;
@@ -26,7 +25,6 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.galaxyapp.API.API_CALL;
@@ -36,7 +34,6 @@ import com.example.galaxyapp.API_Model.Categories;
 import com.example.galaxyapp.API_Model.ImageResponse;
 import com.example.galaxyapp.API_Model.Service;
 import com.example.galaxyapp.R;
-import com.example.galaxyapp.RecyclerViewAdapter.Category_Adapter;
 
 import java.io.File;
 import java.io.IOException;
@@ -96,7 +93,7 @@ public class ServiceFragment extends Fragment implements DatePickerDialog.OnDate
             title = v.findViewById(R.id.etTitle);
             Category_Spinner = v.findViewById(R.id.Category_Spinner);
             description = v.findViewById(R.id.etDes);
-            gender = v.findViewById(R.id.etGender);
+            gender = v.findViewById(R.id.tvGender);
             price = v.findViewById(R.id.etPrice);
             selectdate = v.findViewById(R.id.btnselectDate);
             addservice = v.findViewById(R.id.btnaddservice);

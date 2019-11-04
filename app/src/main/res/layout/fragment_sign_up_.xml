@@ -111,7 +111,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/edittext_bg"
-            android:hint="Password" />
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
 
         <EditText
             android:id="@+id/signuprePassword"
@@ -119,7 +121,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/edittext_bg"
-            android:hint=" Retype Password" />
+            android:hint=" Retype Password"
+            android:inputType="textPassword"
+            />
 
         <Button
             android:id="@+id/signupbtnnext1"
@@ -198,8 +202,11 @@
             android:id="@+id/signupbtnsignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_bg"
-            android:text="SignUp" />
+            android:background="@color/colorPrimaryDark"
+            android:shadowColor="@color/cardview_light_background"
+            android:text="SignUp"
+            android:textColor="@android:color/white"
+            />
     </LinearLayout>
 
 

@@ -47,7 +47,10 @@ public class ServicePost_Adapter extends RecyclerView.Adapter<ServicePost_Adapte
     @Override
     public void onBindViewHolder(@NonNull ServiceViewHolder v, int i) {
         final int id = mList.get(i).getId();
-        v.postTitle.setText(mList.get(i).getTitle());
+        v.postTitle.setText("Title : "+mList.get(i).getTitle());
+        v.postCategories.setText("Categories :"+mList.get(i).getCategory());
+        v.postGender.setText("Gender :"+mList.get(i).getGender());
+        v.postDescription.setText("Description :"+mList.get(i).getDescription());
         String imageURI = API_CALL.baseUrl+"/Images/upload/service/"+mList.get(i).getImageURL();
         strictMode();
         try {
@@ -77,13 +80,15 @@ public class ServicePost_Adapter extends RecyclerView.Adapter<ServicePost_Adapte
     }
 
     public class ServiceViewHolder extends RecyclerView.ViewHolder{
-        private ImageButton profileProvider;
+        private TextView postDescription, postCategories, postGender;
         private TextView postTitle;
         private ImageView postImage;
         private Button book;
         public ServiceViewHolder(@NonNull View v) {
             super(v);
-            profileProvider = v.findViewById(R.id.profileProvider);
+            postDescription = v.findViewById(R.id.tvDescription);
+            postCategories = v.findViewById(R.id.tvCategories);
+            postGender = v.findViewById(R.id.tvGender);
             postTitle = v.findViewById(R.id.postTitle);
             postImage = v.findViewById(R.id.postImage);
             book = v.findViewById(R.id.btnbooktheService);

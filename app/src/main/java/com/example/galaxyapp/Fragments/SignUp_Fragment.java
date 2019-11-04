@@ -222,15 +222,19 @@ public class SignUp_Fragment extends Fragment implements OnMapReadyCallback, Map
 
         }else if (v.getId() == R.id.signupNext2){
             if(TextUtils.isEmpty(email.getText())){
-                email.setError("Please provide username");
+                email.setError("Please provide email");
+                return;
+            }
+            if(!isValid(email.getText().toString())){
+                email.setError("Please enter valid Email");
                 return;
             }
             if(TextUtils.isEmpty(firtname.getText())){
-                firtname.setError("Please provide username");
+                firtname.setError("Please provide firstname");
                 return;
             }
             if(TextUtils.isEmpty(lastname.getText())){
-                lastname.setError("Please provide username");
+                lastname.setError("Please provide lastname");
                 return;
             }
             emails = email.getText().toString();
