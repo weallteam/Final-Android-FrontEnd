@@ -23,7 +23,7 @@
 
     <EditText
         android:id="@+id/etTitle"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Title"
@@ -39,7 +39,7 @@
 
     <EditText
         android:id="@+id/etDes"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
@@ -49,14 +49,14 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/Category_Spinner"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Category_Spinner"
         app:layout_constraintTop_toBottomOf="@+id/Category_Spinner"
         app:layout_constraintVertical_bias="0.0"
         tools:visibility="visible" />
 
     <EditText
         android:id="@+id/etPrice"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
@@ -72,7 +72,7 @@
 
     <EditText
         android:id="@+id/tvGender"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Gender"
@@ -85,7 +85,7 @@
 
     <Button
         android:id="@+id/btnselectDate"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Select Date"
         android:visibility="gone"
@@ -99,7 +99,7 @@
 
     <Button
         android:id="@+id/btnaddservice"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Add Service"
         android:visibility="gone"
@@ -137,7 +137,7 @@
 
     <Spinner
         android:id="@+id/Category_Spinner"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:visibility="visible"

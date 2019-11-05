@@ -135,6 +135,7 @@ public class HomepageActivity extends AppCompatActivity implements ServiceFragme
         body.setVisibility(View.GONE);
         post.setVisibility(View.GONE);
         detail.setVisibility(View.GONE);
+        bookFragment.loadBook();
     }
     @Override
     public void onCategorySearchClicked(String text) {

@@ -53,7 +53,7 @@ public class BookFragment extends Fragment {
         return v;
     }
 
-    private void loadBook() {
+    public void loadBook() {
         Book book = new Book();
         book.setUserID(1);
         Call<List<Book>> call = book_call.viewBook(book);
